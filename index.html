@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="container py-5">
+
+   
+   
+    <section class="task-1 mb-5">
+        <div class="form-container rounded-4 mx-auto">
+            <div class="form-header rounded-top-4 p-4">
+                <h1 class="mb-0 text-white fs-3 fw-bold">Book a train ticket</h1>
+            </div>
+            
+            <div class="form-body p-4 p-md-5">
+                <form>
+                    
+                    <div class="trip-type-wrapper mb-4">
+                        <div class="trip-type d-inline-flex rounded-pill p-1">
+                            <input type="radio" class="btn-check" name="tripType" id="oneWay" value="oneWay" checked>
+                            <label class="btn btn-outline-primary rounded-pill px-4" for="oneWay">One way</label>
+                            <input type="radio" class="btn-check" name="tripType" id="roundTrip" value="roundTrip">
+                            <label class="btn btn-outline-primary rounded-pill px-4" for="roundTrip">Round trip</label>
+                        </div>
+                    </div>
+
+                    
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="fromStation" class="form-label small-label">From</label>
+                            <input type="text" class="form-control custom-input" id="fromStation" name="from" placeholder="Astana" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="toStation" class="form-label small-label">To</label>
+                            <input type="text" class="form-control custom-input" id="toStation" name="to" placeholder="Almaty" required>
+                        </div>
+                    </div>
+
+                   
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-4">
+                            <label for="departureDate" class="form-label small-label">Departure</label>
+                            <input type="date" class="form-control custom-input" id="departureDate" name="departure" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="returnDate" class="form-label small-label">Return</label>
+                            <input type="date" class="form-control custom-input" id="returnDate" name="return">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="passengers" class="form-label small-label">Passengers</label>
+                         
+                            <select class="form-select custom-input" id="passengers" name="passengers" required>
+                                <option value="" disabled selected>Select passengers</option>
+                                <option value="1">1 adult</option>
+                                <option value="2">2 adults</option>
+                                <option value="3">3 adults</option>
+                                <option value="4">4 adults</option>
+                                <option value="5">5 adults</option>
+                                <option value="6">6 adults</option>
+                            </select>
+                        </div>
+                    </div>
+
+                 
+                    <div class="mb-4">
+                        <label class="form-label small-label d-block">Carriage class</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="carriageClass" id="seat" value="seat">
+                            <label class="form-check-label" for="seat">Seat</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="carriageClass" id="coupe" value="coupe" checked required>
+                            <label class="form-check-label" for="coupe">Coupé</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="carriageClass" id="sleeper" value="sleeper">
+                            <label class="form-check-label" for="sleeper">Sleeper</label>
+                        </div>
+                    </div>
+
+                   
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label small-label">Phone</label>
+                            <div class="input-group">
+                                <span class="input-group-text country-code">+7</span>
+                                <input type="tel" class="form-control custom-input phone-input" id="phone" name="phone" placeholder="701 234 56 78" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                           
+                            <label for="email1" class="form-label small-label">Email</label>
+                            <input type="email" class="form-control custom-input" id="email1" name="email" placeholder="name@example.com" required>
+                        </div>
+                    </div>
+
+                  
+                    <div class="mb-4">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="smsTicket" name="smsTicket">
+                            <label class="form-check-label" for="smsTicket">Also send the ticket by SMS</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="agreement" name="agreement" required>
+                            <label class="form-check-label" for="agreement">I agree with the carriage rules</label>
+                        </div>
+                    </div>
+
+                    
+                    <div class="button-wrapper d-flex flex-column-reverse flex-md-row gap-3 justify-content-md-end align-items-md-center">
+                        <button type="reset" class="btn btn-clear rounded-pill px-5 py-2 order-1 order-md-0">Clear</button>
+                        <button type="submit" class="btn btn-find rounded-pill px-5 py-2 order-0 order-md-1">Find trains</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="task-2 mb-5">
+        <h2 class="text-center mb-4">Task 2: AITU Hack 2026 Registration</h2>
+        <div class="container" style="max-width: 600px;">
+            <form class="task2-form">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full name *</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" minlength="2" maxlength="40" required>
+                    <div class="invalid-feedback">Name must be 2–40 characters.</div>
+                </div>
+                <div class="mb-3">
+                    
+                    <label for="email2" class="form-label">University email *</label>
+                    <input type="email" class="form-control" id="email2" name="email" required>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="age" class="form-label">Age *</label>
+                        <input type="number" class="form-control" id="age" name="age" min="16" max="30" step="1" required>
+                        <div class="invalid-feedback">Age must be 16 to 30.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="teamSize" class="form-label">Team size *</label>
+                        <input type="number" class="form-control" id="teamSize" name="teamSize" min="1" max="4" step="1" required>
+                        <div class="invalid-feedback">Team size must be 1 to 4.</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="track" class="form-label">Track *</label>
+                    <select class="form-select" id="track" name="track" required>
+                        <option value="" disabled selected>Choose...</option>
+                        <option value="Web">Web</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="AI">AI</option>
+                        <option value="GameDev">GameDev</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a track.</div>
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="arrivalDay" class="form-label">Arrival day *</label>
+                        <input type="date" class="form-control" id="arrivalDay" name="arrivalDay" min="2026-11-20" max="2026-11-22" required>
+                        <div class="invalid-feedback">Arrival must be 20–22 Nov 2026.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="checkInTime" class="form-label">Check-in time *</label>
+                        <input type="time" class="form-control" id="checkInTime" name="checkInTime" min="09:00" max="18:00" step="1800" required>
+                        <div class="invalid-feedback">Time must be 09:00–18:00 (every 30m).</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="entryFee" class="form-label">Entry fee *</label>
+                    <input type="number" class="form-control" id="entryFee" name="entryFee" min="0" max="5000" step="500" required>
+                    <div class="invalid-feedback">Fee must be 0–5000 ₸ (steps of 500).</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label d-block">Experience level *</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="experience" id="exp1" value="Beginner" required>
+                        <label class="form-check-label" for="exp1">Beginner</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="experience" id="exp2" value="Intermediate">
+                        <label class="form-check-label" for="exp2">Intermediate</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="experience" id="exp3" value="Advanced">
+                        <label class="form-check-label" for="exp3">Advanced</label>
+                    </div>
+                    <div class="invalid-feedback">Please select an experience level.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="github" class="form-label">GitHub profile</label>
+                    <input type="url" class="form-control" id="github" name="github" placeholder="https://github.com/username">
+                    <div class="invalid-feedback">Please enter a valid URL.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password *</label>
+                    <input type="password" class="form-control" id="password" name="password" minlength="8" maxlength="20" required>
+                    <div class="invalid-feedback">Password must be 8–20 characters.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="motivation" class="form-label">Motivation *</label>
+                    <textarea class="form-control" id="motivation" name="motivation" rows="3" minlength="50" maxlength="300" required></textarea>
+                    <div class="invalid-feedback">Motivation must be 50–300 characters.</div>
+                </div>
+                <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="rules" name="rules" required>
+                    <label class="form-check-label" for="rules">I agree to the rules *</label>
+                    <div class="invalid-feedback">You must agree to the rules.</div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Register</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <section class="task-3 mb-5">
+        <h2 class="text-center mb-4">Task 3: Reserve a Table (Fixed)</h2>
+        <div class="container" style="max-width: 500px;">
+            <form class="task3-form p-4 bg-white rounded-3 shadow-sm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name *</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    
+                    <label for="email3" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="email3" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone3" class="form-label">Phone *</label>
+                    <input type="tel" class="form-control" id="phone3" name="phone" inputmode="numeric" required>
+                </div>
+                <div class="mb-3">
+                    <label for="guests" class="form-label">Number of guests *</label>
+                    <input type="number" class="form-control" id="guests" name="guests" min="1" max="20" required>
+                </div>
+                <div class="mb-3">
+                    <label for="date3" class="form-label">Date *</label>
+                    <input type="date" class="form-control" id="date3" name="date" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label d-block">Seating preference *</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="seating" id="inside" value="inside" required>
+                        <label class="form-check-label" for="inside">Inside</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="seating" id="terrace" value="terrace">
+                        <label class="form-check-label" for="terrace">Terrace</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="time" class="form-label">Preferred time *</label>
+                    <select class="form-select" id="time" name="time" required>
+                        <option value="" selected disabled>Choose...</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="comments" class="form-label">Comments</label>
+                    <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+                </div>
+                <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                    <label class="form-check-label" for="terms">I agree to the terms *</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Reserve</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>

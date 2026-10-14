@@ -1,0 +1,162 @@
+
+body { font-family: 'Montserrat', 
+    sans-serif; color: #16302B; 
+    background-color: #F4F7F5; 
+}
+
+
+.task-1 .form-container {
+    background-color: #fff;
+    box-shadow: 0 10px 40px rgba(15, 107, 95, 0.15);
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.task-1 .form-header {
+    background-color: #0F6B5F;
+}
+
+.task-1 .small-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #16302B;
+    margin-bottom: 0.5rem;
+}
+
+/* Trip Type Toggle */
+.task-1 .trip-type {
+    background-color: #E6EFEC;
+    border: 2px solid #E6EFEC;
+}
+
+.task-1 .trip-type .btn-check:checked + .btn {
+    background-color: #0F6B5F;
+    border-color: #0F6B5F;
+    color: #fff;
+}
+
+.task-1 .trip-type .btn-outline-primary {
+    color: #0F6B5F;
+    border-color: transparent;
+    font-weight: 600;
+}
+
+.task-1 .trip-type .btn-outline-primary:hover {
+    background-color: #0F6B5F;
+    border-color: #0F6B5F;
+    color: #fff;
+}
+
+
+.task-1 .custom-input {
+    background-color: #E6EFEC;
+    border: 2px solid #E6EFEC;
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    font-size: 0.9375rem;
+}
+
+.task-1 .custom-input:focus {
+    background-color: #fff;
+    border-color: #0F6B5F;
+    box-shadow: 0 0 0 4px rgba(15, 107, 95, 0.1);
+}
+
+
+.task-1 .country-code {
+    background-color: #0F6B5F;
+    color: #fff;
+    border: 2px solid #0F6B5F;
+    border-right: none;
+    border-radius: 12px 0 0 12px;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+}
+
+.task-1 .phone-input {
+    border-radius: 0 12px 12px 0;
+    border-left: none;
+}
+
+.task-1 .phone-input:focus {
+    border-left: 2px solid #0F6B5F;
+}
+
+
+.task-1 .form-check-input {
+    width: 1.125rem;
+    height: 1.125rem;
+    border: 2px solid #0F6B5F;
+    margin-top: 0.125rem;
+}
+
+.task-1 .form-check-input:checked {
+    background-color: #0F6B5F;
+    border-color: #0F6B5F;
+}
+
+.task-1 .form-check-label {
+    font-size: 0.9375rem;
+    color: #16302B;
+    margin-left: 0.5rem;
+}
+
+
+.task-1 .btn-find {
+    background-color: #F2A93B;
+    border: 2px solid #F2A93B;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.task-1 .btn-find:hover {
+    background-color: #e09828;
+    border-color: #e09828;
+    color: #fff;
+}
+
+.task-1 .btn-clear {
+    background-color: #fff;
+    border: 2px solid #0F6B5F;
+    color: #0F6B5F;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.task-1 .btn-clear:hover {
+    background-color: #E6EFEC;
+    color: #0F6B5F;
+}
+
+.task-2 .task2-form input:user-invalid, 
+.task-2 .task2-form select:user-invalid, 
+.task-2 .task2-form textarea:user-invalid {
+    border-color: #dc3545;
+
+}
+
+.task-2 .task2-form .invalid-feedback {
+    display: none;
+}
+
+.task-2 .task2-form input:user-invalid ~ .invalid-feedback, 
+.task-2 .task2-form select:user-invalid ~ .invalid-feedback, 
+.task-2 .task2-form textarea:user-invalid ~ .invalid-feedback {
+    display: block;
+}
+
+
+.task-2 .task2-form .form-check-input:user-invalid {
+    border-color: #dc3545;
+}
+
+.task-2 .task2-form:has(.form-check-input:user-invalid) > .invalid-feedback {
+    display: block;
+}
+
+.task-2 .task2-form input:user-valid, 
+.task-2 .task2-form select:user-valid, 
+.task-2 .task2-form textarea:user-valid {
+    border-color: #198754;
+}
