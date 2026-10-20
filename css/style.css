@@ -23,7 +23,7 @@ body { font-family: 'Montserrat',
     margin-bottom: 0.5rem;
 }
 
-/* Trip Type Toggle */
+
 .task-1 .trip-type {
     background-color: #E6EFEC;
     border: 2px solid #E6EFEC;
@@ -83,7 +83,7 @@ body { font-family: 'Montserrat',
 }
 
 
-.task-1 .form-check-input {
+.task-1 .form-switch-input {
     width: 1.125rem;
     height: 1.125rem;
     border: 2px solid #0F6B5F;
